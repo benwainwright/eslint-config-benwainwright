@@ -30,6 +30,8 @@ module.exports = {
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/filename-case": "off",
+    // Extremely slow
+    "unicorn/better-regex": "off",
     "import/namespace": "off",
     "import/named": "off",
     "import/prefer-default-export": "error",
@@ -180,7 +182,8 @@ module.exports = {
         "@typescript-eslint/unified-signatures": "error",
         "@typescript-eslint/prefer-optional-chain": "error",
         "@typescript-eslint/prefer-for-of": "error",
-        "@typescript-eslint/no-floating-promises": "error",
+        // Slow!
+        "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
         "@typescript-eslint/no-unnecessary-condition": "error",
