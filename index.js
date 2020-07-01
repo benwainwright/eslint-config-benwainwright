@@ -34,6 +34,7 @@ module.exports = {
     "unicorn/better-regex": "off",
     "import/namespace": "off",
     "import/named": "off",
+    "import/no-named-as-default-member": "off",
     "import/prefer-default-export": "error",
     // Eslint build in
     "no-inline-comments": "error",
@@ -260,6 +261,12 @@ module.exports = {
             trailingUnderscore: "forbid"
           }
         ]
+      }
+    },
+    {
+      files: ["*.config.js", "*.config.ts"],
+      rules: {
+        "filenames/match-exported": "off"
       }
     },
     {
