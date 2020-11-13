@@ -8,7 +8,7 @@ module.exports = {
     "sonarjs",
     "unicorn",
     "promise",
-    "array-func"
+    "array-func",
   ],
   ignorePatterns: ["node_modules"],
   extends: [
@@ -20,11 +20,11 @@ module.exports = {
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
     "plugin:promise/recommended",
-    "plugin:array-func/all"
+    "plugin:array-func/all",
   ],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: "module",
   },
   rules: {
     "unicorn/no-fn-reference-in-iterator": "off",
@@ -60,7 +60,7 @@ module.exports = {
     "capitalized-comments": [
       "error",
       "always",
-      { ignoreConsecutiveComments: true }
+      { ignoreConsecutiveComments: true },
     ],
     "no-shadow": "error",
     yoda: ["error", "never"],
@@ -121,26 +121,26 @@ module.exports = {
         selector: "default",
         format: ["camelCase"],
         leadingUnderscore: "forbid",
-        trailingUnderscore: "forbid"
+        trailingUnderscore: "forbid",
       },
       {
         selector: "variable",
         format: ["camelCase", "UPPER_CASE"],
         leadingUnderscore: "forbid",
-        trailingUnderscore: "forbid"
+        trailingUnderscore: "forbid",
       },
       {
         selector: "typeLike",
         format: ["PascalCase"],
         leadingUnderscore: "forbid",
-        trailingUnderscore: "forbid"
+        trailingUnderscore: "forbid",
       },
       {
         selector: "enumMember",
         format: ["PascalCase"],
         leadingUnderscore: "forbid",
-        trailingUnderscore: "forbid"
-      }
+        trailingUnderscore: "forbid",
+      },
     ],
 
     // Filenames
@@ -148,7 +148,7 @@ module.exports = {
     "filenames/match-exported": "error",
 
     // Fp
-    "fp/no-let": "error"
+    "fp/no-let": "error",
   },
   overrides: [
     {
@@ -156,7 +156,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint"
+        "prettier/@typescript-eslint",
       ],
       rules: {
         "@typescript-eslint/method-signature-style": ["error", "property"],
@@ -164,13 +164,13 @@ module.exports = {
         "@typescript-eslint/class-literal-property-style": ["error", "fields"],
         "@typescript-eslint/consistent-type-definitions": [
           "error",
-          "interface"
+          "interface",
         ],
         "@typescript-eslint/ban-ts-comment": "error",
         "@typescript-eslint/array-type": ["error", { default: "array" }],
         "@typescript-eslint/no-magic-numbers": [
           "error",
-          { ignore: [0, 1], ignoreEnums: true }
+          { ignore: [0, 1], ignoreEnums: true },
         ],
         "@typescript-eslint/explicit-function-return-type": "error",
         "@typescript-eslint/no-explicit-any": "error",
@@ -191,15 +191,15 @@ module.exports = {
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/promise-function-async": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
-        "@typescript-eslint/no-shadow",
+        "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/no-require-imports": "error",
         "@typescript-eslint/prefer-nullish-coalescing": "error",
         "@typescript-eslint/prefer-includes": "error",
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/require-await": "error",
-        "@typescript-eslint/prefer-reduce-type-parameter": "error"
-      }
+        "@typescript-eslint/prefer-reduce-type-parameter": "error",
+      },
     },
     {
       files: ["*.js", "*.jsx"],
@@ -212,22 +212,22 @@ module.exports = {
             selector: "variable",
             format: ["camelCase", "UPPER_CASE", "PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "typeLike",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "enumMember",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
-          }
-        ]
-      }
+            trailingUnderscore: "forbid",
+          },
+        ],
+      },
     },
     {
       files: ["*.tsx"],
@@ -235,8 +235,8 @@ module.exports = {
       extends: ["plugin:react/recommended", "plugin:react-hooks/recommended"],
       settings: {
         react: {
-          version: "detect"
-        }
+          version: "detect",
+        },
       },
       rules: {
         "react/prop-types": "off",
@@ -247,28 +247,28 @@ module.exports = {
             selector: "variable",
             format: ["camelCase", "UPPER_CASE", "PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "typeLike",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "enumMember",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
-          }
-        ]
-      }
+            trailingUnderscore: "forbid",
+          },
+        ],
+      },
     },
     {
       files: ["*.config.js", "*.config.ts"],
       rules: {
-        "filenames/match-exported": "off"
-      }
+        "filenames/match-exported": "off",
+      },
     },
     {
       files: ["*.spec.ts", "*.spec.dom.ts", "*.spec.dom.tsx"],
@@ -288,22 +288,22 @@ module.exports = {
             selector: "variable",
             format: ["camelCase", "UPPER_CASE", "PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "typeLike",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
+            trailingUnderscore: "forbid",
           },
           {
             selector: "enumMember",
             format: ["PascalCase"],
             leadingUnderscore: "forbid",
-            trailingUnderscore: "forbid"
-          }
-        ]
-      }
-    }
-  ]
+            trailingUnderscore: "forbid",
+          },
+        ],
+      },
+    },
+  ],
 };
