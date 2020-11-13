@@ -191,6 +191,7 @@ module.exports = {
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/promise-function-async": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
+        "no-shadow": "off",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/no-require-imports": "error",
