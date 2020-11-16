@@ -272,7 +272,13 @@ module.exports = {
       },
     },
     {
-      files: ["*.spec.ts", "*.spec.dom.ts", "*.spec.dom.tsx", "*.spec.tsx"],
+      files: [
+        "*.spec.ts",
+        "*.spec.dom.ts",
+        "*.spec.dom.tsx",
+        "*.spec.tsx",
+        "cypress/**/*",
+      ],
       rules: {
         "unicorn/consistent-function-scoping": "off",
         "sonarjs/no-identical-functions": "off",
