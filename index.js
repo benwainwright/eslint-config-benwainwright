@@ -27,6 +27,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "unicorn/no-reduce": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/filename-case": "off",
@@ -145,7 +146,6 @@ module.exports = {
 
     // Filenames
     "filenames/match-regex": ["error", "^[a-z\\-]+(\\.[a-z]+)*$", true],
-    "filenames/match-exported": "error",
 
     // Fp
     "fp/no-let": "error",
@@ -267,9 +267,6 @@ module.exports = {
     },
     {
       files: ["*.config.js", "*.config.ts"],
-      rules: {
-        "filenames/match-exported": "off",
-      },
     },
     {
       files: [
@@ -284,7 +281,6 @@ module.exports = {
         "sonarjs/no-identical-functions": "off",
         "sonarjs/no-duplicate-string": "off",
         "filenames/match-regex": "off",
-        "filenames/match-exported": "off",
         "fp/no-let": "off",
         "max-classes-per-file": "off",
         "@typescript-eslint/require-await": "off",
