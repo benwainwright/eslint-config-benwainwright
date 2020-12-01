@@ -27,6 +27,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "unicorn/no-useless-undefined": "off",
     "unicorn/no-reduce": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/prevent-abbreviations": "off",
