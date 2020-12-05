@@ -79,7 +79,7 @@ module.exports = {
     "no-sequences": "error",
     "no-self-compare": "error",
     "no-script-url": "error",
-    "no-return-await": "error",
+    "no-return-await": "off",
     "no-return-assign": "error",
     "no-proto": "error",
     "no-param-reassign": "error",
