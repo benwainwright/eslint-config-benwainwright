@@ -31,6 +31,7 @@ module.exports = {
     "unicorn/no-reduce": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/prevent-abbreviations": "off",
+    "unicorn/prefer-spread": "off",
     "unicorn/filename-case": "off",
     // Extremely slow
     "unicorn/better-regex": "off",
