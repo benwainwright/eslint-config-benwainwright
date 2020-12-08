@@ -36,6 +36,7 @@ module.exports = {
     // Extremely slow
     "unicorn/better-regex": "off",
     "import/namespace": "off",
+    "import/default": "off",
     "import/named": "off",
     "import/no-named-as-default-member": "off",
     "import/prefer-default-export": "error",
