@@ -175,7 +175,7 @@ module.exports = {
           "error",
           { ignore: [0, 1], ignoreEnums: true },
         ],
-        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-non-null-assertion": "error",
         "@typescript-eslint/no-unused-vars": "error",
