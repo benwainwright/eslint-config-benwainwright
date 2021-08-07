@@ -44,7 +44,6 @@ module.exports = {
     "no-inline-comments": "error",
     "no-bitwise": "error",
     "array-func/prefer-array-from": "off",
-    "sort-imports": "error",
     "prefer-template": "error",
     "prefer-spread": "error",
     "prefer-rest-params": "error",
