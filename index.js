@@ -60,11 +60,6 @@ module.exports = {
     "no-multi-assign": "error",
     "no-lonely-if": "error",
     "new-cap": "error",
-    "capitalized-comments": [
-      "error",
-      "always",
-      { ignoreConsecutiveComments: true },
-    ],
     "no-shadow": "error",
     yoda: ["error", "never"],
     "require-unicode-regexp": "error",
