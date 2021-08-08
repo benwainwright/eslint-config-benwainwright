@@ -39,7 +39,6 @@ module.exports = {
     "import/default": "off",
     "import/named": "off",
     "import/no-named-as-default-member": "off",
-    "import/prefer-default-export": "error",
     // Eslint build in
     "no-inline-comments": "error",
     "no-bitwise": "error",
@@ -165,10 +164,6 @@ module.exports = {
         ],
         "@typescript-eslint/ban-ts-comment": "error",
         "@typescript-eslint/array-type": ["error", { default: "array" }],
-        "@typescript-eslint/no-magic-numbers": [
-          "error",
-          { ignore: [0, 1], ignoreEnums: true },
-        ],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-non-null-assertion": "error",
