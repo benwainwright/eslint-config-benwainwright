@@ -148,6 +148,12 @@ module.exports = {
   },
   overrides: [
     {
+      files: ["*.config.js"],
+      rules: {
+        "unicorn/prefer-module": "off"
+      }
+    },
+    {
       files: ["*.ts", "*.tsx"],
       extends: [
         "plugin:@typescript-eslint/eslint-recommended",
