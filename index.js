@@ -150,8 +150,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.config.js"],
+      files: ["*.config.js", ".*.js"],
       rules: {
+        "filenames/match-regex": "off",
         "unicorn/prefer-module": "off"
       }
     },
