@@ -30,6 +30,7 @@ module.exports = {
     "unicorn/no-useless-undefined": "off",
     "unicorn/no-reduce": "off",
     "unicorn/no-array-reduce": "off",
+    "unicorn/prefer-object-from-entries": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/prefer-spread": "off",
