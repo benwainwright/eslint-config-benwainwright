@@ -172,7 +172,7 @@ module.exports = {
           "interface",
         ],
         "@typescript-eslint/ban-ts-comment": "error",
-        "@typescript-eslint/array-type": ["error", { default: "array" }],
+        "@typescript-eslint/array-type": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-non-null-assertion": "error",
